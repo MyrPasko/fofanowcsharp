@@ -1,10 +1,53 @@
 ﻿using System;
+using System.Text;
 
 namespace FofanovTestProject
 {
     class Program
     {
         static void Main(string[] args)
+        {
+        }
+
+        static void StringBuilder()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.Append("My ");
+            sb.Append("name ");
+            sb.Append("is ");
+            sb.Append("John ");
+            sb.Append("Snow.");
+            sb.AppendLine("And this is good.");
+
+            string str = sb.ToString();
+
+            Console.WriteLine(str);
+        }
+
+        static void StringModification()
+        {
+            var concatination = string.Concat("My", " string", " and ", "another string.");
+            var testString = "My string and another string.";
+            string[] splitting = testString.Split("");
+
+            Console.WriteLine(concatination);
+            Console.WriteLine(splitting[0]);
+        }
+
+        static void StringEmptiness()
+        {
+            string anotherEmpty = string.Empty;
+            string empty = "";
+            string whiteSpaced = " ";
+            string notEmpty = " b";
+            string nullString = null;
+
+            Console.WriteLine(string.IsNullOrWhiteSpace(empty));
+            Console.WriteLine(string.IsNullOrWhiteSpace(whiteSpaced));
+            Console.WriteLine(string.IsNullOrWhiteSpace(nullString));
+        }
+
+        static void QueryingStrings()
         {
             string str = "sabbracadabra";
             bool containsSabbra = str.Contains("sabbra");
