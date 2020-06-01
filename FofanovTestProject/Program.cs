@@ -9,6 +9,24 @@ namespace FofanovTestProject
         {
         }
 
+        static void MathDemo()
+        {
+            Console.WriteLine(Math.Round(2.5));
+            Console.WriteLine(Math.Round(2.5, MidpointRounding.AwayFromZero));
+            Console.WriteLine(Math.Round(2.5, MidpointRounding.ToEven));
+        }
+
+        static void CastingAndParsins()
+        {
+            byte b = 3; // 1 byte
+            int i = b; // 4 bytes
+            long l = i; // 8 bytes
+
+            float f = l; // 3.0
+
+            b = (byte)i; 
+        }
+
         static void StringBuilder()
         {
             StringBuilder sb = new StringBuilder();
