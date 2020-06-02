@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics.CodeAnalysis;
 using System.Text;
 
 namespace FofanovTestProject
@@ -7,6 +8,72 @@ namespace FofanovTestProject
     {
         static void Main(string[] args)
         {
+            
+        }
+
+        static void HomeWork2()
+        {
+            // Geron's formula
+            
+            Console.WriteLine($"Gimme the first side: ");
+            double firstSide = double.Parse(Console.ReadLine());
+            
+            Console.WriteLine($"Gimme the second side: ");
+            double secondSide = double.Parse(Console.ReadLine());
+            
+            Console.WriteLine($"Gimme the third side: ");
+            double thirdSide = double.Parse(Console.ReadLine());
+            
+            var semiPerimeter = (firstSide + secondSide + thirdSide) / 2;
+            var triangleArea = Math.Sqrt(semiPerimeter *
+                                         (semiPerimeter - firstSide) *
+                                         (semiPerimeter - secondSide) *
+                                         (semiPerimeter - thirdSide));
+            
+            Console.WriteLine($"Result is: {triangleArea}");
+        }
+        
+        static void HomeWork3()
+        {
+            // User profile
+
+            Console.WriteLine($"What is your surname?");
+            var surname = Console.ReadLine();
+            Console.WriteLine($"What is your name?");
+            var name = Console.ReadLine();
+            Console.WriteLine($"What is your age?");
+            var age = Console.ReadLine();
+            Console.WriteLine($"What is your weight?");
+            var weight = int.Parse(Console.ReadLine());
+            Console.WriteLine($"What is your height in meters?");
+            var height = double.Parse(Console.ReadLine());
+
+            var bmi = weight / (height * height);
+            
+            Console.Clear();
+
+            Console.WriteLine($"Your profile: \n" +
+                              $"Full Name: {surname} {name}\n" +
+                              $"Age: {age}\n" +
+                              $"Weight: {weight}\n" +
+                              $"Height: {height}\n" +
+                              $"BMI: {bmi}");
+        }
+
+        static void Time()
+        {
+            DateTime dt = DateTime.Now;
+
+            Console.WriteLine(dt);
+
+            Console.WriteLine($"It's {dt.Date}, {dt.Hour}: {dt.Minute}");
+            DateTime time = dt.AddYears(100);
+
+            Console.WriteLine(time);
+
+            TimeSpan diff = time - dt;
+
+            Console.WriteLine(diff.TotalDays);
         }
 
         static void MathDemo()
@@ -24,7 +91,7 @@ namespace FofanovTestProject
 
             float f = l; // 3.0
 
-            b = (byte)i; 
+            b = (byte) i;
         }
 
         static void StringBuilder()

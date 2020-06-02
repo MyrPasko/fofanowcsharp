@@ -2,13 +2,25 @@
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\test_projects\dot-net\fofanov\FofanovTestProject" t="IncludeFlat">
-      <e p="FofanovTestProject" t="IncludeRecursive">
+      <e p="A_Basics" t="IncludeRecursive">
+        <e p="A_Basics.csproj" t="IncludeRecursive" />
         <e p="bin" t="ExcludeRecursive" />
-        <e p="FofanovTestProject.csproj" t="IncludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
-              <e p="FofanovTestProject.AssemblyInfo.cs" t="Include" />
+              <e p="A_Basics.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+      </e>
+      <e p="B_ControlFlow" t="IncludeRecursive">
+        <e p="B_ControlFlow.csproj" t="IncludeRecursive" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="B_ControlFlow.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
         </e>
