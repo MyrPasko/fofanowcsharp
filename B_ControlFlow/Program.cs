@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace B_ControlFlow
 {
@@ -6,7 +7,58 @@ namespace B_ControlFlow
     {
         static void Main(string[] args)
         {
-            HomeWork6();
+
+        }
+        
+
+        static void HomeWork8()
+        {
+            // Login/password
+            string check = "johnsilver/qwerty";
+            bool checkIsValid = false;
+
+            for (int i = 0; i < 3; i++)
+            {
+                Console.WriteLine("Login: ");
+                string login = Console.ReadLine();
+
+                Console.WriteLine("Password: ");
+                string password = Console.ReadLine();
+
+                var resString = $"{login}/{password}";
+
+                if (resString == check)
+                {
+                    checkIsValid = true;
+                    break;
+                }
+            }
+
+            if (checkIsValid)
+            {
+                Console.WriteLine("Enter the System.");
+            }
+            else
+            {
+                Console.WriteLine("The number of available tries have been exceeded.");
+            }
+        }
+
+        static void HomeWork7()
+        {
+            // Factorial
+            Console.WriteLine("Gimme the number to count factorial: ");
+
+            int num = GetInt();
+            int result = num;
+
+            while (num > 1)
+            {
+                num--;
+                result *= num;
+            }
+
+            Console.WriteLine($"Here is your result: {result}");
         }
 
         static void HomeWork6()
@@ -97,6 +149,11 @@ namespace B_ControlFlow
         static double GetDouble()
         {
             return double.Parse(Console.ReadLine());
+        }
+
+        static int GetInt()
+        {
+            return int.Parse(Console.ReadLine());
         }
 
         static void Cycles()

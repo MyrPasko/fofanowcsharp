@@ -26,6 +26,33 @@
         </e>
         <e p="Program.cs" t="Include" />
       </e>
+      <e p="C_ArrayCollections" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="C_ArrayCollections.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="C_ArrayCollections.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Parse.cs" t="Include" />
+        <e p="Program.cs" t="Include" />
+      </e>
+      <e p="D_OOP" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Calculator.cs" t="Include" />
+        <e p="Character.cs" t="Include" />
+        <e p="D_OOP.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="D_OOP.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+      </e>
       <e p="FofanovTestProject.sln" t="IncludeFlat" />
       <e p="packages" t="ExcludeRecursive" />
     </e>
