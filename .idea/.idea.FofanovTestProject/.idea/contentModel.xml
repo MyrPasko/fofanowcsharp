@@ -52,6 +52,7 @@
           </e>
         </e>
         <e p="Program.cs" t="Include" />
+        <e p="ValRefTypes.cs" t="Include" />
       </e>
       <e p="FofanovTestProject.sln" t="IncludeFlat" />
       <e p="packages" t="ExcludeRecursive" />
