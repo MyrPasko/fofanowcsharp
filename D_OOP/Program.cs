@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace D_OOP
 {
@@ -6,12 +7,81 @@ namespace D_OOP
     {
         static void Main(string[] args)
         {
+            Character c = new Character("Ork", 30);
+        }
+
+        static void BoxingUnboxing()
+        {
+            PointVal val = new PointVal() {X = 1, Y = 2};
+
+            if (val is PointVal)
+            {
+                Console.WriteLine($"Is PointRef");
+            }
+            else
+            {
+                Console.WriteLine($"Is not PointRef");
+            }
+        }
+
+        static void NRE_NullableValTypesDemo()
+        {
+            try
+            {
+                PointRef c = null;
+                Console.WriteLine(c.X);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
+        }
+
+        static void PassByRefDemo()
+        {
+            int a = 1;
+            int b = 2;
+
+            Swap(ref a, ref b);
+
+            Console.WriteLine($"Original a={a}, b={b}");
+
+            var list = new List<int>();
+            AddNumbers(list);
+
+            foreach (var item in list)
+            {
+                Console.WriteLine(item);
+            }
+        }
+
+        static void Swap(ref int a, ref int b)
+        {
+            Console.WriteLine($"Original a={a}, b={b}");
+
+            int tmp = a;
+            a = b;
+            b = tmp;
+
+            Console.WriteLine($"Swapped a={a}, b={b}");
+        }
+
+        static void AddNumbers(List<int> numbers)
+        {
+            numbers.Add(1);
+            numbers.Add(2);
+            numbers.Add(3);
+        }
+
+        static void ValRefTypesDemo()
+        {
             // Character c = new Character();
             //
             // c.Hit(120);
             //
             // Console.WriteLine(c.Health);
-            
+
             // Calculator calc = new Calculator();
             //
             // var square1 = calc.CalcTriangleSquare(20, 20, 30);
@@ -47,12 +117,12 @@ namespace D_OOP
             b.LogValues();
 
             Console.WriteLine("After structs");
-            
-            PointRef o = new PointRef();
+
+            var o = new PointRef();
             o.X = 3;
             o.Y = 5;
 
-            PointRef n = o;
+            var n = o;
             n.X = 7;
             n.Y = 10;
 
