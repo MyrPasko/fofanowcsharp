@@ -4,10 +4,10 @@ namespace D_OOP
 {
     public class Character
     {
-        public int Health { get; private set; }
-        
-        public string Race { get; private set; }
-        public int Armor { get; private set; }
+        private readonly  int Speed = 10;
+        private int Health { get; set; }
+        private string Race { get; set; }
+        private int Armor { get; set; }
 
         public Character(string race)
         {
@@ -26,7 +26,11 @@ namespace D_OOP
                 damage = Health;
 
             Health -= damage;
+        }
 
+        public int GetSpeed()
+        {
+            return Speed;
         }
     }
 }

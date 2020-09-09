@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Reflection.Metadata;
 
 namespace D_OOP
 {
@@ -7,7 +8,31 @@ namespace D_OOP
     {
         static void Main(string[] args)
         {
-            Character c = new Character("Ork", 30);
+            // IBaseCollection collection = new IBaseCollection();
+            
+            IBaseCollection collection = new BaseList(4);
+            collection.Add(1); 
+            
+            // Shape shape = new Shape();
+            
+            Shape[] shapes = new Shape[2];
+             
+            shapes[0] = new Triangle(10, 20, 30);
+            shapes[1] = new Rectangle(10, 20);
+
+            foreach (var shape in shapes)
+            {
+                shape.Draw();
+                Console.WriteLine(shape.Perimeter());
+            }
+        }
+
+        static void InheritanceRealisation()
+        {
+            ModelXTerminal terminal = new ModelXTerminal("123");
+            terminal.Connect();
+
+            Console.WriteLine($"Show Terminal Actions]");
         }
 
         static void BoxingUnboxing()
@@ -17,10 +42,6 @@ namespace D_OOP
             if (val is PointVal)
             {
                 Console.WriteLine($"Is PointRef");
-            }
-            else
-            {
-                Console.WriteLine($"Is not PointRef");
             }
         }
 

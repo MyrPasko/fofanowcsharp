@@ -44,6 +44,8 @@
         <e p="Calculator.cs" t="Include" />
         <e p="Character.cs" t="Include" />
         <e p="D_OOP.csproj" t="IncludeRecursive" />
+        <e p="Inheritance.cs" t="Include" />
+        <e p="Interfaces.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
@@ -52,6 +54,7 @@
           </e>
         </e>
         <e p="Program.cs" t="Include" />
+        <e p="Shapes.cs" t="Include" />
         <e p="ValRefTypes.cs" t="Include" />
       </e>
       <e p="FofanovTestProject.sln" t="IncludeFlat" />
