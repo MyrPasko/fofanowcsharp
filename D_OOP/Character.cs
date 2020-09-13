@@ -6,15 +6,16 @@ namespace D_OOP
     {
         private readonly  int Speed = 10;
         private int Health { get; set; }
-        private string Race { get; set; }
+        private Race Race { get; set; }
         private int Armor { get; set; }
 
-        public Character(string race)
+        public Character(Race race)
         {
-            Race = race; 
+            Race = race;
+            Armor = 30;
         }
 
-        public Character(string race, int armor)
+        public Character(Race race, int armor)
         {
             Race = race;
             Armor = armor;
@@ -31,6 +32,11 @@ namespace D_OOP
         public int GetSpeed()
         {
             return Speed;
+        }
+
+        public Race GetRace()
+        {
+            return Race;
         }
     }
 }

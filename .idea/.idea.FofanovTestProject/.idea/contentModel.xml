@@ -44,6 +44,8 @@
         <e p="Calculator.cs" t="Include" />
         <e p="Character.cs" t="Include" />
         <e p="D_OOP.csproj" t="IncludeRecursive" />
+        <e p="Enums.cs" t="Include" />
+        <e p="EvilInheritance.cs" t="Include" />
         <e p="Inheritance.cs" t="Include" />
         <e p="Interfaces.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">

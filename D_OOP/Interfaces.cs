@@ -1,9 +1,23 @@
-﻿namespace D_OOP
+﻿using System.Collections;
+using System.Collections.Generic;
+
+namespace D_OOP
 {
     public interface IBaseCollection
     {
         void Add(object obj);
         void Remove(object obj);
+    }
+
+    public static class BaseCollectionExtension
+    {
+        public static void AddRange(this IBaseCollection collection, IEnumerable<object> objects)
+        {
+            foreach (var item in objects)
+            {
+                collection.Add(item);
+            }
+        } 
     }
 
     public class BaseList : IBaseCollection
