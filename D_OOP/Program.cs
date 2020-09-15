@@ -8,7 +8,31 @@
      {
          static void Main(string[] args)
          {
-             
+         }
+
+         static void GeneralStack()
+         {
+             MyStack<int> ms = new MyStack<int>();
+             ms.Push(1);
+             ms.Push(2);
+             // ms.Push(3);
+
+             // Console.WriteLine(ms.Peek());
+             //
+             // ms.Pop();
+             //
+             // Console.WriteLine(ms.Peek());
+
+             ms.Push(3);
+             ms.Push(4);
+             ms.Push(5);
+
+             foreach (var item in ms)
+             {
+                 Console.WriteLine(item);
+             }
+
+             // Console.WriteLine(ms.Peek());
          }
  
          static void EnumExamples()

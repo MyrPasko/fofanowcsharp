@@ -48,6 +48,7 @@
         <e p="EvilInheritance.cs" t="Include" />
         <e p="Inheritance.cs" t="Include" />
         <e p="Interfaces.cs" t="Include" />
+        <e p="MyStack.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
