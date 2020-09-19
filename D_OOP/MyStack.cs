@@ -66,9 +66,9 @@ namespace D_OOP
 
         public IEnumerator<T> GetEnumerator()
         {
-            for (int i = Count - 1; i>=0; i++)
+            for (int i = Count - 1; i >= 0; i++)
             {
-                yield return _items[i]; 
+                yield return _items[i];
             }
         }
 
