@@ -73,10 +73,24 @@
         </e>
         <e p="Program.cs" t="Include" />
       </e>
+      <e p="F_Delegation" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="ChessPlayer.cs" t="Include" />
+        <e p="F_Delegation.csproj" t="IncludeRecursive" />
+        <e p="ForEach.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="F_Delegation.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Top100ChessPlayers.csv" t="Include" />
+      </e>
       <e p="FofanovTestProject.sln" t="IncludeFlat" />
       <e p="packages" t="ExcludeRecursive" />
     </e>
-    <e p="C:\Users\dev\.Rider2019.3\config\consoles\db" t="IncludeRecursive" />
     <e p="C:\Users\dev\.Rider2019.3\config\extensions" t="IncludeRecursive" />
     <e p="C:\Users\dev\.Rider2019.3\system\extResources" t="IncludeRecursive" />
     <e p="C:\Users\dev\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_FofanovTestProject.-517362066.00" t="ExcludeRecursive" />
